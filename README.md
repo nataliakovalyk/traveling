@@ -1,2 +1,2 @@
 # Setup 
-You need to instal `yarn`
+You need to instal `yarn`# traveling

@@ -11,6 +11,16 @@ module.exports = {
   },
   module: {  // where we defined file patterns and their loaders
       rules: [ 
+        {
+            test: /\.(sass|scss)$/,
+            use: [{
+                loader: "style-loader" // creates style nodes from JS strings
+            }, {
+                loader: "css-loader" // translates CSS into CommonJS
+            }, {
+                loader: "sass-loader" // compiles Sass to CSS
+            }]
+          }
       ]
   },
   plugins: [  // Array of plugins to apply to build chunk
@@ -22,6 +32,16 @@ module.exports = {
       new HtmlWebpackPlugin({
           template: __dirname + "/src/public/about.html",
           filename: 'about.html',
+          inject: true
+      }),
+      new HtmlWebpackPlugin({
+          template: __dirname + "/src/public/bruksela.html",
+          filename: 'bruksela.html',
+          inject: true
+      }),
+       new HtmlWebpackPlugin({
+          template: __dirname + "/src/public/berlin.html",
+          filename: 'berlin.html',
           inject: true
       })
   ],
