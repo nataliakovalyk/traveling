@@ -1,1 +1,1058 @@
-liverpool.html
+l<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap Starter!</title>
+    <link rel="stylesheet" href="bootstrap/simple-todos/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+</head>
+
+<body ng-controller="TestController as test">
+    <h1 class="display-3 text-center">Bootstrap Grid</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="bg-primary text-center col-12 col-sm-4 col-md-8 col-lg-2">
+                <!-- Aby stworzyć kolumnę używamy klasy col-md- która obsłuzy rozdzielczości >=992px i >1200px* gdzie * może mieć wartości 1-12  widok dla netbooków,
+          col-sm Są to kolumny, które zachowują swoje szerokości do rozdzielczości ekranu 768px, poniżej niej każda kolumna niezależnie od jej rozmiaru zajmuje całą szerokość kontenera i ustawiają się jedna pod drugą.obsłużyć są tablety
+          col-xs Są to kolumny, których rozmiar zmienia się płynnie w miarę zmniejszania się rozdzielczości. to urządzenia mobilne-->
+                <h1>Col-1</h1>
+            </div>
+            <div class="bg-success text-center col-12 col-sm-8 col-md-4 col-lg-10">
+                <h1>Col-8</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="jumbotron">
+                <h1 class="display-4">Hello, world!</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <!-- Content here -->
+        </div>
+    </div>
+    <br>
+    <div class="page-header">
+        <h1>Navbars</h1>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                "Dropdown"
+                <span class="caret"></span>
+              </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Action</a>
+                            </li>
+                            <li>
+                                <a href="#">Another action</a>
+                            </li>
+                            <li>
+                                <a href="#">Something else here</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li>
+                                <a href="#">Separated link</a>
+                            </li>
+                            <li>
+                                <a href="#">One more separated link</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                "Dropdown"
+                <span class="caret"></span>
+              </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Action</a>
+                            </li>
+                            <li>
+                                <a href="#">Another action</a>
+                            </li>
+                            <li>
+                                <a href="#">Something else here</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li>
+                                <a href="#">Separated link</a>
+                            </li>
+                            <li>
+                                <a href="#">One more separated link</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--.nav-collapse -->
+        </div>
+    </nav>
+    <br>
+    <h2 class="display-7 text-center">Podstawowy formularz</h2>
+    <form role="form">
+        <!-- Cały formularz zamykamy w znaczniku <form>...<form> -->
+        <div class="form-group">
+            <!-- Następnie każda „grupa” elementów (czyli przykładowo pole do wpisania adresu email oraz jego etykieta) musi być zamknięta w divie z klasą .form-group. -->
+            <!-- Teraz elementy wewnątrz grupy: -->
+            <label for="exampleInputEmail1">Email</label>
+            <!-- Odpowiada za wyświetlanie etykiety nad polem formularza. -->
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Podaj adres Email">
+            <!-- type= jest to rodzaj pola, które jest nam potrzebne.
+    class="form-control"  jest to klasa bootstrapa, która musi być zawsze dołączona w celu prawidłowego formatowania pola.
+    id= jest identyfikatorem pola a placeholder= jest tekstem wyświetlanym wewnątrz pola. -->
+        </div>
+        <div class="container-fluid">
+            <div class="form-group">
+                <label for="exampleInputPassword1">Hasło</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Twoje tajne hasło">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFile">Załączanie pliku</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Tekst podpowiedzi!</p>
+                <!-- .help-block służy do wpisania podpowiedzi dla użytkownika (np jakiego formatu adresu strony ma użyć lub jakiej wielkości plik może wysłać. -->
+            </div>
+        </div>
+        <!-- Gdy chcemy użyć „checkboxy” to najpierw tworzymy div z klasą .checkbox, wewnątrz umieszczamy znacznik <label>...</label> i wewnątrz niego input z typem „checkbox” oraz opis. -->
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Zaznacz mnie!
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">Wyślij!</button>
+    </form>
+    <br>
+    <h2 class="display-7 text-center">Wyświetlanie w linii</h2>
+    <!-- Aby wszystkie pola naszego formularza były wyświetlanie liniowo a nie pod sobą należy mu dodać klasę .form-inline.  -->
+    <form class="form-inline" role="form">
+        <div class="form-group">
+            <!-- Czytniki ekranowe nie radzą sobie z formularzami bez etykiet (label) więc ukrywamy je poprzez dodanie im klasy .sr-only, dzięki czemu etykiety nie będą widoczne na komputerach a będą się prawidłowo wyświetlać na czytnikach ekranowych. Liniowe formularze przechodzą w blokowe poniżej szerokości 768px. -->
+            <label class="sr-only" for="exampleInputEmail2">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Podaj email">
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="exampleInputPassword2">Hasło</label>
+            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Podaj hasło">
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Zaznacz mnie
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">Wyślij</button>
+        
+    </form>
+    <br>
+    <!-- Aby opisy pól znajdowały się obok pól a nie nad nimi należy wykonać kilka czynności:
+Znacznikowi <form> nadajemy klasę .form-horizontal -->
+    <form class="form-horizontal" role="form">
+        <!-- Pole formularza i jego opis otaczamy divem z klasą .form-group -->
+        <div class="form-group">
+            <!-- Znacznikowi <label> nadajemy klasę .control-label oraz nadajemy mu wybraną szerokość np .col-md-2 -->
+            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+            <!-- Kod pola formularza (input) otaczamy divem z szerokością (etykiecie nadaliśmy szerokość 2 kolumn więc pozostało nam 10) czyli klasą .col-md-10 -->
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Podaj adres email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Hasło</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Twoje tajne hasło">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Zaznacz mnie
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Wyślij</button>
+                        <div class="row">
+<button class="btn btn-primary btn-sm col-md-1" type="submit">Button primary sm</button>
+<button class="btn btn-primary col-md-2" type="submit">Button primary</button>
+<button class="btn btn-primary btn-lg col-md-3" type="submit">Button primary lg</button>
+ 
+<button class="btn btn-secondary btn-sm col-md-1" type="submit">Button secondary sm</button>
+<button class="btn btn-secondary col-md-2" type="submit">Button secondary</button>
+<button class="btn btn-secondary btn-lg col-md-3" type="submit">Button secondary lg</button>
+ 
+<button class="btn btn-success btn-sm col-md-1" type="submit">Button success sm</button>
+<button class="btn btn-success col-md-2" type="submit">Button success</button>
+<button class="btn btn-success btn-lg col-md-3" type="submit">Button success lg</button>
+ 
+<button class="btn btn-info btn-sm col-md-1" type="submit">Button info sm</button>
+<button class="btn btn-info col-md-2" type="submit">Button info</button>
+<button class="btn btn-info btn-lg col-md-3" type="submit">Button info lg</button>
+ 
+<button class="btn btn-warning btn-sm col-md-1" type="submit">Button warning sm</button>
+<button class="btn btn-warning col-md-2" type="submit">Button warning</button>
+<button class="btn btn-warning btn-lg col-md-3" type="submit">Button warning lg</button>
+ 
+<button class="btn btn-danger btn-sm col-md-1" type="submit">Button danger sm</button>
+<button class="btn btn-danger col-md-2" type="submit">Button danger</button>
+<button class="btn btn-danger btn-lg col-md-3" type="submit">Button danger lg</button>
+</div>
+            </div>
+        </div>
+    </form>
+    <br>
+    <h3 class="display-7 text-center">Pola w formularzach / Supported controls</h3>
+    <h4 class="display-7 text-center">Textarea</h4>
+    <!-- Używamy go do stworzenia pola w którym użytkownik może wpisać wiadomośc, komentarz, post itp. Umożliwia wyświetlanie kilku linii tekstu. Tworzymy je poprzez znacznik <textarea z klasą .form-control oraz parametrem rows="*"> gdzie * oznacza ilość linii tekstu które będą widoczne w polu. -->
+    <input type="text" placeholder="Pole tekstowe">
+    <textarea class="form-control" rows="2">Textarea z 2 rzędami</textarea>
+    <textarea class="form-control" rows="3">Textarea z 3 rzędami</textarea>
+    <textarea class="form-control" rows="4">Textarea z 4 rzędami</textarea>
+    <h4 class="display-7 text-center">Checkbox i radio button</h4>
+    <div class="checkbox">
+        <label>
+            <!-- Checkbox i Radio Button
+Checkboxy są polami wielokrotnego wyboru tj. można zaznaczyć kilka w jednym formularzu. Radio button jest elementem jednokrotnego wyboru, jeśli zaznaczymy jakąś opcję, poprzednia zostaje automatycznie odznaczona. -->
+            <input type="checkbox" value=""> Zwykły checkbox
+        </label>
+    </div>
+    <div class="checkbox disabled">
+        <label>
+            <input type="checkbox" value="" disabled> Checkbox z parametrem <code>disabled</code>, którego nie można wybrać
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> Pierwsze pole pojedynczego wyboru
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> Drugie pole pojedynczego wyboru
+        </label>
+    </div>
+    <div class="radio disabled">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled> Nieaktywne pole wyboru
+        </label>
+        <h3 class="display-7 text-center">Listy rozwijane z możliwością wyboru</h3>
+        <!-- Listy rozwijane i przewijane
+Gdy mamy zdefiniowane kilka/kilkanaście wartości i chcemy by użytkownik wybrał jedną z nich możemy użyć tagu <select> z klasą .form-control który zawiera w sobie tagi <option>. Gdy chcemy by nasza lista była przewijana zamiast rozwijanej i umożliwiała wybór kilku wartości to dodajemy parametrmultiple i standardowo jak przy formularzach, klasę .form-control -->
+        <select class="form-control">
+            <option>Opcja 1</option>
+            <option>Opcja 2</option>
+            <option>Opcja 3</option>
+            <option>Opcja 4</option>
+            <option>Opcja 5</option>
+        </select>
+        <select multiple class="form-control">
+            <option>Opcja 1</option>
+            <option>Opcja 2</option>
+            <option>Opcja 3</option>
+            <option>Opcja 4</option>
+            <option>Opcja 5</option>
+        </select>
+        <h3 class="display-7 text-center"> Liniowe checkbox i radio button</h3>
+        <!-- Checkbox i radio liniowe
+Aby nasze checkboxy lub radio buttony były wyświetlane w linii a nie pod sobą należy dodać klasę .checkbox-inline lub .radio-inline -->
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+        </label>
+        <br>
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+        </label>
+    </div>
+    <h2 class="display-7 text-center">Dodatkowe opcje pól w formularzach</h2>
+    <h3 class="display-7 text-center">Statyczne pole formularza</h3>
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+                <p class="form-control-static">stały@email.pl</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword" class="col-sm-2 control-label">Hasło</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Hasło">
+            </div>
+        </div>
+    </form>
+    <h3 class="display-7 text-center">Zablokowanie wszystkich pól formularza</h3>
+    <form role="form">
+        <fieldset disabled>
+            <div class="form-group">
+                <label for="disabledTextInput">Zablokowane pole tekstowe</label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="Zablokowane pole tekstowe">
+            </div>
+            <div class="form-group">
+                <label for="disabledSelect">Zablokowana lista wyboru</label>
+                <select id="disabledSelect" class="form-control">
+                    <option>Zablokowana opcja listy wyboru</option>
+                </select>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Zablokowany checkbox
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Zablokowany przycisk akcji</button>
+        </fieldset>
+    </form>
+    <h3 class="display-7 text-center">Pole tylko do odczytu</h3>
+    <input class="form-control" type="text" placeholder="Pole tylko do odczytu" readonly>
+    <h3 class="display-7 text-center">Kolorowanie pól po walidacji</h3>
+    <div class="form-group has-success">
+        <label class="control-label" for="inputSuccess1">Input z kolorowaniem success</label>
+        <input type="text" class="form-control" id="inputSuccess1">
+    </div>
+    <div class="form-group has-warning">
+        <label class="control-label" for="inputWarning1">Input z kolorowaniem warning</label>
+        <input type="text" class="form-control" id="inputWarning1">
+    </div>
+    <div class="form-group has-error">
+        <label class="control-label" for="inputError1">Input z kolorowaniem error</label>
+        <input type="text" class="form-control" id="inputError1">
+    </div>
+    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+    <h3 class="display-7 text-center">Kolorowanie pól + ikony</h3>
+    <div class="form-group has-success has-feedback">
+        <label class="control-label" for="inputSuccess2">Input z kolorowaniem success</label>
+        <input type="text" class="form-control" id="inputSuccess2">
+        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+    </div>
+    <div class="form-group has-warning has-feedback">
+        <label class="control-label" for="inputWarning2">Input z kolorowaniem warning</label>
+        <input type="text" class="form-control" id="inputWarning2">
+        <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+    </div>
+    <div class="form-group has-error has-feedback">
+        <label class="control-label" for="inputError2">Input z kolorowaniem error</label>
+        <input type="text" class="form-control" id="inputError2">
+        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+    </div>
+    <h3 class="display-7 text-center">Kolorowanie + ikonki w formularzu z opisami obok</h3>
+    <form class="form-horizontal" role="form">
+        <div class="form-group has-success has-feedback">
+            <label class="control-label col-sm-3" for="inputSuccess3">Input z kolorowaniem success</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputSuccess3">
+                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+            </div>
+        </div>
+    </form>
+    <br>
+    <div class="page-header">
+        <h1 class="display-7 text-center">Alerts</h1>
+    </div>
+    <div class="alert alert-success" role="alert">
+        <strong>Heads up! </strong> " This alert needs your attention, but it's not super important."
+    </div>
+    <div class="alert alert-info" role="alert">
+        <strong>Well done! </strong> " You successfully read this important alert message."
+    </div>
+    <div class="alert alert-warning" role="alert">
+        <strong>Warning! </strong> " Best check you self, you're not looking too good."
+    </div>
+    <div class="alert alert-danger" role="alert">
+        <strong>Oh snap! </strong> " Change a few things up and try submitting again."
+    </div>
+    <br>
+    <h1 class="display-7 text-center">Alert z linkiem</h1>
+<div class="alert alert-primary" role="alert">
+  This is a primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-secondary" role="alert">
+  This is a secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-success" role="alert">
+  This is a success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-danger" role="alert">
+  This is a danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-warning" role="alert">
+  This is a warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-info" role="alert">
+  This is a info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-light" role="alert">
+  This is a light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-dark" role="alert">
+  This is a dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<br>
+    <div class="page-header">
+        <h1 class="display-7 text-center"> Tables</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Natalka</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Holly</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Natalka</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Holly</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@TWBootstrap</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <h3 class="display-7 text-center"> Kolorowanie + ikonki w formularzu liniowym</h3>
+    <form class="form-inline" role="form">
+        <div class="form-group has-success has-feedback">
+            <label class="control-label" for="inputSuccess4">Input z kolorowaniem success</label>
+            <input type="text" class="form-control" id="inputSuccess4">
+            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+        </div>
+    </form>
+    <h3 class="display-7 text-center">Kolorowanie + ikonki z ukrytą etykietą</h3>
+    <div class="form-group has-success has-feedback">
+        <label class="control-label sr-only" for="inputSuccess5">Ukryta etykieta</label>
+        <input type="text" class="form-control" id="inputSuccess5">
+        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+    </div>
+    <br>
+    <h2 class="display-7 text-center">Wymiary formularzy / Control sizing</h2>
+    <h3 class="display-7 text-center">Zmiana wysokości pól formularza</h3>
+    <!-- Do określania wysokości pól formularza korzystamy z dwóch klas .input-lg, która jak można się domyślać powiększa. Oraz .input-sm, która zmniejsza wielkośc pola w formularzu. W celu zmiany szerokości pól formularza będziemy korzystać z dobrze nam znanych klas jak .col-lg-* -->
+    <input class="form-control input-lg" type="text" placeholder=".input-lg">
+    <input class="form-control" type="text" placeholder="Standardowa wielkość">
+    <input class="form-control input-sm" type="text" placeholder=".input-sm">
+    <select class="form-control input-lg">
+        <option>input-lg</option>
+    </select>
+    <select class="form-control">
+        <option>Standardowa wielkość</option>
+    </select>
+    <select class="form-control input-sm">
+        <option>input-sm</option>
+    </select>
+    <h3 class="display-7 text-center">Zmiana szerokości pól formularza</h3>
+    <!-- Standardowo wszystkie pola formularzy mają szerokość 100% gdy chcemy to zmienić to input musimy otoczyć divem z odpowiadającym nam rozmiarem np. .col-md-6 lub .col-xs-4 -->
+    <div class="row">
+        <div class="col-xs-2">
+            <input type="text" class="form-control" placeholder=".col-xs-2">
+        </div>
+        <div class="col-xs-3">
+            <input type="text" class="form-control" placeholder=".col-xs-3">
+        </div>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" placeholder=".col-xs-4">
+        </div>
+    </div>
+    <h3 class="display-7 text-center">Teksty z podpowiedziami</h3>
+    <!-- Gdy chcemy podpowiedzieć użytkownikowi co dokładnie ma wpisać w polu powyżej wystraczy pod polem input dopisać
+ -->
+    <span class="help-block">Podpowiedź tekstowa, która może być dłuższa niż jedna linijka</span>
+    <br>
+    <div class="container subsite-main-content">
+        <div class="row">
+            <selection class="subsite-content col-md-9">
+                <h1>Skontaktuj sie z nami</h1>
+                <p>Jesteśmy nowo powstałą firmą oferującą wyrób i sprzedaż wysokiej klasy koszy wiklinowych .Kosze wykonane są z własnej wikliny, każdy etap jej przygotowania wykonywany jest własnoręcznie. Tradycja wyplatania koszy w naszej rodzinie sięga pokoleń, dzięki czemu kosze są starannie, solidnie wykonane. Długoletni staż produkcji koszy umożliwia wyrób zarówno koszy powszechnie dostępnych, jak i tych nietypowych, skomplikowanych kształtach i wymiarach.</p>
+                <form>
+                    <div class="form-group">
+                        <label class="sr-only">Imie:</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                            <input class="form-control" placeholder="Wpisz swoje imie...">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only">Nazwisko:</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                            <input class="form-control" placeholder="Wpisz swoje nazwisko...">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only">E-mail:</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"> <span class="glyphicon glyphicon-home"></span>
+                            </div>
+                            <input class="form-control" placeholder="Podaj e-mail kontaktowy...">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only">Tresc wiadomosci:</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"></div>
+                            <textarea class="form-control" placeholder="Tresc wiadomosci"></textarea>
+                        </div>
+                    </div>
+                      <div class="form-group">
+                        <button class="btn btn-primary btn-block">wysli wiadomosc</button>
+                        <button type="button" class="btn btn-primary btn-sm btn-block">Block level button</button>
+                        <button type="button" class="btn btn-secondary btn-sm btn-block">Block level button</button>
+                        <button type="button" class="btn btn-primary btn-block">Block level button</button>
+                        <button type="button" class="btn btn-secondary btn-block">Block level button</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                        <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+                    </div>
+                </form>
+            </selection>
+            <br>
+                <aside class="sidebar col-md-3">
+                <p><span class="glyphicon glyphicon-home"></span>ADRES:
+                    <br> Allegro
+                </p>
+                <p><span class=""></span>TELEFON:
+                    <br> 123 123 123
+                </p>
+                <p><span class="glyphicon glyphicon-envelope"></span>E-MAIL:
+                    <br> allegro@pl.com
+                </p>
+            </aside>
+        </div>
+    </div>
+    <br>
+    
+    <h1 class="display-7 text-center">Akordeon</h1>
+    <div id="#akordeon-faq" role="tablist" aria-multiselectable="true">
+  <div class="card">
+    <div class="card-header" role="tab" id="pierwsze-pytanie">
+      <h5 class="mb-2">
+        <a data-toggle="collapse" data-parent="#akordeon-faq" href="#pierwsza-odpowiedz" aria-expanded="true" aria-controls="pierwsza-odpowiedz">
+          1 pytanie:<br>Jak długo trzeba sie uczyc programowania?
+        </a>
+      </h5>
+    </div>
+ 
+    <div id="pierwsza-odpowiedz" class="collapse in" role="tabpanel" aria-labelledby="pierwsze-pytanie">
+      <div class="card-body">
+        To jest odpowiedź na 1 pytanie<br>Całe życie!
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="drugie-pytanie">
+      <h5 class="mb-2">
+        <a class="collapsed" data-toggle="collapse" data-parent="#akordeon-faq" href="#druga-odpowiedz" aria-expanded="false" aria-controls="druga-odpowiedz">
+          2 pytanie:<br>Od czego lepiej zacząć nauke  z strone front-end Developer?
+        </a>
+      </h5>
+    </div>
+    <div id="druga-odpowiedz" class="collapse" role="tabpanel" aria-labelledby="drugie-ytanie">
+      <div class="card-body">
+        To jest odpowiedź na 2 pytanie.<br>Od podstaw HTML,CSS,JavaScript.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="trzecie-pytanie">
+      <h5 class="mb-2">
+        <a class="collapsed" data-toggle="collapse" data-parent="#akordeon-faq" href="#trzecia-odpowiedz" aria-expanded="false" aria-controls="trzecia-odpowiedz">
+          3 pytanie:<br>Co zrobic kiedy nie rozumiem jak mam wykonac podane zadanie ?
+        </a>
+      </h5>
+    </div>
+    <div id="trzecia-odpowiedz" class="collapse" role="tabpanel" aria-labelledby="trzecie-pytanie">
+      <div class="card-body">
+        To jest odpowiedź na trzecie pytanie.
+        <br>Przeczytaj dobrze zadanie tyle razy ile bedziesz potrzebowal zeby jej zrozumiec
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-xs-6">
+                <h1>Hello, world!</h1>
+            </div>
+            <div class="col-lg-4 col-xs-6">
+                <h1>Hello, world!</h1>
+            </div>
+            <div class="col-lg-4 col-xs-6">
+                <h1>Hello, world!</h1>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>1</th>
+                            <th>2</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Bootstrap</td>
+                        <td>Jest swietny</td>
+                        <td class="warning">Uwaga!</td>
+                    </tr>
+                    <tr>
+                        <td>I bardzo</td>
+                        <td>Latwy!</td>
+                        <td class="success">Success!</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-4">
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="jumbotron jumbotron-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-12">
+                        <h1 class="h1">
+            W czym możemy Ci pomóc?<small><br>Formularz kontaktowy</small></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="well well-sm">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">
+                                            Imię i nazwisko *</label>
+                                        <input type="text" class="form-control" id="name" placeholder="" required="required" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">
+                                            E-mail *</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                            </span>
+                                            <input type="email" class="form-control" id="email" placeholder="" required="required" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">
+                                            Kategoria *</label>
+                                        <select id="subject" name="subject" class="form-control" required="required">
+                                            <optgroup label="Wybierz kategorię wiadomości:">
+                                                <option value="customer">Obsługa klienta</option>
+                                                <option value="support">Problemy techniczne</option>
+                                                <option value="invoice">Faktury i płatności</option>
+                                                <option value="complaint">Reklamacje</option>
+                                                <option value="other">Inne</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">
+                                            Wiadomość *</label>
+                                        <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder=""></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                        Wyślij wiadomość</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <form>
+                        <legend><span class="glyphicon glyphicon-globe"></span> Dane teleadresowe:</legend>
+                        <address>
+                            <strong>PromoLabs</strong>Natalia Kovalyk
+                            <br> Graniczna 12/30
+                            <br> 27-200 Warszawa
+                            <br> NIP: 12 34-56-789
+                            <br>
+                            <br>
+                            <abbr title="Telefon">
+                                T:</abbr>
+                            +48) 987 654 321
+                            <br>
+                            <abbr title="E-mail">
+                                E:</abbr>
+                            <a href="mailto:#">happynatalia28@gmail.com</a>
+                        </address>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form>
+    <h1 class="display-7 text-center">Rozbudowany formularz!</h1>
+    <div id="content" class="site-content">
+    <div id="primary" class="content-area container">
+  <div class="form-row" >
+    <div class="form-group col-md-3">
+      <label for="przykladowyEmail">Email</label>
+      <input type="email" class="form-control" id="przykladowyEmail" placeholder="Email">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="przykladoweHaslo">Hasło</label>
+      <input type="password" class="form-control" id="przykladoweHaslo" placeholder="Hasło">
+    </div>
+  </div>
+  <div class="form-group col-md-3">
+    <label for="przykladowyAdres">Adres</label>
+    <input type="text" class="form-control" id="przykladowyAdres" placeholder="Podaj ulicę">
+  </div>
+  <div class="form-group col-md-3">
+    <label for="przykladowyAdres2">Adres druga linia</label>
+    <input type="text" class="form-control" id="przykladowyAdres2" placeholder="Podaj numer mieszkania">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="przykladoweMiasto">Miasto</label>
+      <input type="text" class="form-control" id="przykladoweMiasto">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="przykladoweWojewodztwo">Województwo</label>
+      <select id="przykladoweWojewodztwo" class="form-control">
+        <option selected>Wybierz...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="przykladowyKodPocztowy">Kod pocztowy</label>
+      <input type="text" class="form-control" id="przykladowyKodPocztowy">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="przykladowyCheckbox">
+      <label class="form-check-label" for="przykladowyCheckbox">
+        Zaznacz mnie
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Wyślij</button>
+
+</div>
+</div>
+</form>
+    <h1 class="display-7 text-center">Obramowanie kart</h1>
+    <!-- Możemy zmienić kolory całych kart, ale możemy także zmienić im tylko obramowanie i/lub kolor tekstu w środku. Oczywiście znów mówię o wbudowanych w Bootstrap kolorach. Zmianę koloru obramowania uzyskamy poprzez dodanie do diva z klasą .card klasy .border-*, gdzie podobnie jak w przypadku kolorów całych kart mamy do wyboru primary, secondary, success, danger, warning, info, light, dark. Aby zmienić kolor tekstu wewnątrz karty, divowi z klasą .card-body dodajemy klasę .text-* i już wiecie co podstawić pod gwiazdkę:)-->
+<div class="card border-primary">
+  <div class="card-header">Header</div>
+  <div class="card-body text-primary">
+    <h5 class="card-title">Primary card title</h5>
+    <p class="card-text">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+  </div>
+</div>
+<div class="card border-secondary3">
+  <div class="card-header">Header</div>
+  <div class="card-body text-secondary">
+    <h5 class="card-title">Secondary card title</h5>
+    <p class="card-text">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+  </div>
+</div>
+<div class="card border-success">
+  <div class="card-header">Header</div>
+  <div class="card-body text-success">
+    <h5 class="card-title">Success card title</h5>
+    <p class="card-text">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+  </div>
+</div>
+<div class="card border-danger">
+  <div class="card-header">Header</div>
+  <div class="card-body text-danger">
+    <h5 class="card-title">Danger card title</h5>
+    <p class="card-text">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+  </div>
+</div>
+<div class="card border-warning">
+  <div class="card-header">Header</div>
+  <div class="card-body text-warning">
+    <h5 class="card-title">Warning card title</h5>
+    <p class="card-text">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+  </div>
+</div>
+<div class="card border-info">
+  <div class="card-header">Header</div>
+  <div class="card-body text-info">
+    <h5 class="card-title">Info card title</h5>
+    <p class="card-text">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+  </div>
+</div>
+<div class="card border-light">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h5 class="card-title">Light card title</h5>
+    <p class="card-text">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+  </div>
+</div>
+<div class="card border-dark">
+  <div class="card-header">Header</div>
+  <div class="card-body text-dark">
+    <h5 class="card-title">Dark card title</h5>
+    <p class="card-text">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+  </div>
+</div>
+<br><br>
+
+<h1 class="display-7 text-center">Wyrównanie całości</h1>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card card-body">
+          <h4 class="card-title">Tytuł</h4>
+          <p class="card-text">Całość tej karty nie ma wyrównywania tekstu,ustawia się domyślnie do lewej.</p>
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card card-body text-center">
+          <h4 class="card-title">Tytuł</h4>
+          <p class="card-text">Całość tej karty jest wyrównywana do środka.</p>
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card card-body text-right">
+          <h4 class="card-title">Tytuł</h4>
+          <p class="card-text">Całość tej karty jest wyrównywana do prawej.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
+<br><br>
+ 
+<h1 class="display-7 text-center">Wyrównanie poszczególnych elementów</h1>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card card-body">
+          <h4 class="card-title">Tytuł</h4>
+          <p class="card-text">Całość tej karty nie ma wyrównywania tekstu,ustawia się domyślnie do lewej.</p>
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card card-body">
+          <h4 class="card-title text-center">Tytuł</h4>
+          <p class="card-text">Tylko tytuł tej karty jest wyrównany do środka.</p>
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card card-body">
+          <h4 class="card-title">Tytuł</h4>
+          <p class="card-text text-right">Tylko treść tej karty jest wyrównana do prawej.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
+</body>
